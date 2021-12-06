@@ -34,7 +34,9 @@ struct FoodListView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Foods")
-        }.onAppear {
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
             foodListViewModel.loadFoods()
         }
     }

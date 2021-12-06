@@ -21,6 +21,7 @@ struct FoodDetailView: View {
             }
             .navigationTitle(food.name)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
